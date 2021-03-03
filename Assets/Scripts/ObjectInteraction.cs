@@ -26,15 +26,15 @@ public class ObjectInteraction : MonoBehaviour
 
     void sumarpuntos()
     {
-        punto++;
+        puntos++;
         //puntos=puntos-10;
         txtpuntos.text=puntos.ToString();
     }
 
     void cambiarPos()
     {
-        transform.position=new Vector3((Random.insideUnitSphere.x*tamanoRandom), transform.position.y, (Random.insideUnitSphere.z*tamanoRandom));
-        Vector3 pospersonaje=new Vector3((personaje.position.x, personaje.position.y, personaje.position.z));
+        transform.position = new Vector3((Random.insideUnitSphere.x*tamanoRandom), transform.position.y, (Random.insideUnitSphere.z*tamanoRandom));
+        Vector3 pospersonaje = new Vector3(personaje.position.x, personaje.position.y, personaje.position.z);
         transform.LookAt (pospersonaje);
     } 
 }
